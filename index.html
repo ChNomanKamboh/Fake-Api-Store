@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20b7b1ace1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon"
+        href="./img/online-shopping-logo-design-template-digital-shopping-logo-mouse-cursor-cart-concepts_502185-286_1_-removebg-preview.png"
+        type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>E-Commerce Store</title>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./order.html">Orders</a>
+            </li>
+            <li>
+                <a href="#mainbox">Products</a>
+            </li>
+            
+        </ul>
+        <img src="./online-shopping-logo-design-template-digital-shopping-logo-mouse-cursor-cart-concepts_502185-286_1_-removebg-preview (1).png"
+            alt="">
+        <i onclick="handleSubmit()" class="fa-solid fa-cart-shopping"><a href="#" id="pop"></a></i>
+    </nav>
+
+    <div class="main">
+        <div class="box" id="box1">
+            <h1>The landing page where customers start their shopping journey.</h1>
+        </div>
+        <div class="product-heading">
+            <h2>This section provides access to all your products or product categories</h2>
+            <p>
+                Discover our wide range of high-quality products, thoughtfully curated and organized into various
+                categories for your convenience. From fashion to electronics, find everything you need in one place for
+                a seamless shopping experience.</p>
+        </div>
+        <div id="mainbox"></div>
+    </div>
+
+    <div class="cartdiv">
+        <div class="itemdiv"></div>
+        <button onclick="handleCheck()" id="checkOrder">Check Out</button>
+    </div>
+
+    <footer>
+        <h2>.All Rights Reserved. </h2>
+    </footer>
+
+</body>
+<script src="./index.js"></script>
+<script>AOS.init();</script>
+
+</html>
+

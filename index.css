@@ -1,0 +1,553 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-bottom:1px solid #cccccc2c;
+    box-shadow: 10px 0px 20px #ccc;
+}
+
+nav>ul {
+    position: absolute;
+    top: 26px;
+    list-style: none;
+    padding-right: 65px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-end-end-radius: 30px;
+    border-start-end-radius: 30px;
+    background: #000;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+nav ul:hover {
+    background: #0053B3;
+    transition: 0.8s;
+}
+
+nav li {
+    color: white;
+    float: left;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+nav li:hover {
+    transition: .5s;
+    text-shadow: 5px 5px 5px 8px black;
+    transform: scale(1.1);
+}
+
+nav img {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    height: 130%;
+    width: 12vw;
+}
+
+nav i {
+    background-color: black;
+    color: #ffffff;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: .5s;
+    padding-right: 65px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.07rem;
+    border-end-start-radius: 30px;
+    border-start-start-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+nav i:hover {
+    background: #0053B3;
+    transition: .6s;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+#box1 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-3.avif);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://img.freepik.com/premium-photo/shopping-mall-store-with-casual-wear-t-shirt-stylish-accessories-empty-clothing-shop-filled-with-fashionable-new-trends-modern-clothes-waiting-customers-come-shop_482257-61875.jpg); */
+    background-size: 100% 100%;
+    animation: slider;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    transition-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-1.jpg);
+        transition-duration: 1s;
+        opacity: 1;
+    }
+
+    15% {
+        transition-duration: 1s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-1.jpg);
+        opacity: 0.5;
+    }
+
+    30% {
+        transition-duration: 1s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-2.jpg);
+        opacity: 1;
+    }
+
+    45% {
+        transition-duration: 1s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-2.jpg);
+        opacity: 0.5;
+    }
+
+    60% {
+        transition-duration: 1s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-3.avif);
+        opacity: 1;
+    }
+
+    75% {
+        transition-duration: 1s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-3.avif);
+        opacity: 0.5;
+    }
+
+    90% {
+        transition-duration: 1s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-4.avif);
+        opacity: 1;
+    }
+
+    100% {
+        transition-duration: 1s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-4.avif);
+        opacity: 0.5;
+    }
+}
+
+#box1 h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    /* top: 18rem; */
+    width: 70%;
+    left: 12rem;
+    animation: top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes top {
+    0% {
+        opacity: 1;
+        top: 16rem;
+    }
+
+    25% {
+        opacity: 1;
+        top: 16rem;
+    }
+
+    50% {
+        opacity: 1;
+        top: 16rem;
+    }
+
+    75% {
+        top: 16rem;
+        opacity: 1;
+    }
+
+    100% {
+        top: 10rem;
+        opacity: 0;
+    }
+}
+
+.img2 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 65%;
+    width: 80%;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    top: 270px;
+    width: 28ch;
+    overflow: hidden;
+    height: 20px;
+}
+
+.price {
+    position: absolute;
+    font-size: 18px;
+    top: 300px;
+    left: 10px;
+    width: fit-content;
+}
+
+#rat {
+    position: absolute;
+    right: 0px !important;
+    top: 300px;
+}
+
+.discript {
+    text-align: center;
+}
+
+#mainbox {
+    /* display: grid;
+    grid-auto-rows: 400px;
+    grid-template-columns: repeat(4, 305px); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px !important;
+    box-sizing: border-box;
+}
+
+#box2 {
+    position: relative;
+    transition: .6s;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+
+}
+
+#box2::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    border-radius: 8px;
+    transition: .6s;
+    background: linear-gradient(95deg, rgba(85, 249, 197, 0.719) 60%, rgba(0, 213, 255, 0.712) 100%);
+}
+
+#box2:hover::before {
+    bottom: 0;
+    transition: .6s;
+}
+
+#box2:hover {
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3);
+    transition: .6s;
+
+}
+
+.cartdiv {
+    height: 70vh;
+    width: 30%;
+    position: fixed;
+    right: -31%;
+    bottom: 0px;
+    z-index: 10;
+    transition: 0.8s;
+    overflow-y: visible;
+    overflow-x: hidden;
+    background: #0000009c;
+}
+
+.cardshow {
+    right: 0%;
+    transition: 0.8s;
+}
+
+#cartbtn {
+    height: 7vh;
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#cartbtn:hover {
+    transition: .6s;
+    color: white;
+}
+
+#cartbtn:focus {
+    box-shadow: 0px 0px 10px 3px rgba(128, 128, 128, 0.535);
+}
+
+#cartbtn::before {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    transform: rotateY(-90deg);
+    background: #000;
+    transition: .3s;
+}
+
+#cartbtn:hover::before {
+    transform: rotateY(0deg);
+    transition: .6s;
+}
+
+.cartdiv #cartmain {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(160, 230, 225);
+    border-bottom: 2px solid white;
+}
+
+.cartdiv img {
+    height: 20vh;
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.cartdiv .carttitle {
+    position: absolute;
+    top: 35px;
+    left: 140px;
+    height: 34px;
+    overflow: hidden;
+    width: 58%;
+    font-size: 0.9rem;
+}
+
+.cartdiv .cartcateg {
+    font-size: 0.76rem;
+    color: darkgrey;
+    width: 58%;
+    overflow: hidden;
+    left: 140px;
+    top: 72px;
+    position: absolute;
+}
+
+.cartprice {
+    position: absolute;
+    left: 140px;
+    bottom: 40px;
+}
+
+.cartdivdel {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1rem;
+    color: darkgray;
+    cursor: pointer;
+}
+
+.cartdivdel:hover {
+    color: blue;
+    transition: .7s;
+}
+
+.cart-count {
+    height: 5vh;
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    column-gap: 4px;
+    align-items: center;
+}
+
+.cart-count span {
+    background: rgb(248, 3, 3);
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-top: 5px;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.cart-count span:hover {
+    transition: .5s;
+    opacity: 1;
+}
+
+.cart-count input {
+    height: 95%;
+    position: relative;
+    top: 0;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+footer {
+    height: 25vh;
+    width: 100%;
+    background: #000;
+    position: relative;
+    border-radius:50px 0px;
+}
+
+footer h2 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+.product-heading {
+    height: 43vh;
+    width: 100%;
+    position: relative;
+    background: #1F2026;
+}
+
+.product-heading h2 {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    top: 2rem;
+    width: 80%;
+    left: 10rem;
+}
+
+.product-heading p {
+    color: white;
+    text-align: center;
+    width: 55%;
+    line-height: 1.5;
+    position: relative;
+    top: 2.7rem;
+    left: 20rem;
+}
+
+.cartdiv>button {
+    height: 8vh;
+    width: 65%;
+    position: sticky;
+    bottom: 10px;
+    left: 18%;
+    border-radius: 30px;
+    border: 1px solid wheat;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cartdiv>button:hover {
+    background: #0053B3;
+    transition: .5s;
+    border: none;
+}
+
+.cartdiv button::selection {
+    background: none;
+}
+
+.cartdiv img::selection {
+    background: none;
+}
+
+.cartdiv input::selection {
+    background: none;
+}
+
+.cartdiv span::selection {
+    background: none;
+}
+
+.cartdiv h4::selection {
+    background: none;
+}
+
+.cartdiv h3::selection {
+    background: none;
+}
+
+#pop {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background: #0053B3;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 2px;
+    transition: .5s;
+}
+
+nav i:hover>#pop {
+    background: #000;
+    transition: .5s;
+}
